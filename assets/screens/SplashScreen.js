@@ -4,7 +4,7 @@ import { View, StyleSheet, Image } from "react-native";
 export default function SplashScreen({ navigation }) {
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigation.replace("MainScreen");
+      navigation.replace("OnBording");
     }, 3000);
     return () => clearTimeout(timer);
   }, [navigation]);

@@ -4,6 +4,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import SplashScreen from "./assets/screens/SplashScreen";
 import MainScreen from "./assets/screens/MainScreen";
+import OnBoardingScreen from "./assets/screens/OnBoardingScreen";
+
 
 
 const Stack = createNativeStackNavigator();
@@ -18,6 +20,7 @@ export default function App() {
         }}
       >
         <Stack.Screen name="Splash" component={SplashScreen} />
+        <Stack.Screen name="OnBording" component={OnBoardingScreen} />
         <Stack.Screen name="MainScreen" component={MainScreen} />
       </Stack.Navigator>
     </NavigationContainer>
