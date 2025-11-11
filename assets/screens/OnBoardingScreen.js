@@ -45,6 +45,7 @@ const Slide = ({ item }) => (
       style={{ height: 200, width: width * 0.9, resizeMode: 'contain' }}
     />
     <Text style={styles.title}>{item.title}</Text>
+    
     <Text style={styles.subtitle}>{item.subTitle}</Text>
   </View>
 );
@@ -103,13 +104,13 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: '700',
-    marginTop: 20,
+    marginTop: 30,
     color: COLORS.primary,
   },
   subtitle: {
     fontSize: 20,
     textAlign: 'center',
-    marginTop: 8,
+    marginTop: 20,
     paddingHorizontal: 24,
     color: '#444',
   },
